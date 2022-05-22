@@ -98,6 +98,7 @@ count=0
 
 noface=0
 
+
 while(cap.isOpened()):
     
     ret, frame = cap.read()
