@@ -36,7 +36,6 @@ def get_blinking(eye_points, facial_landmarks):
     ver_line_lenght = hypot((center_top[0] - center_bottom[0]), (center_top[1] - center_bottom[1]))
 
     ratio = hor_line_lenght / ver_line_lenght
-
     return ratio
 
 def DelImage():
