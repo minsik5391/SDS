@@ -2,13 +2,12 @@ import RPi.GPIO as GPIO
 
 import time
 
-
+#도어락 작동
 def Doorlock():
     
     GPIO.setmode(GPIO.BCM)
     
     GPIO.setup(18,GPIO.OUT)
-<<<<<<< HEAD
     
     time.sleep(0.5)
     
@@ -18,20 +17,8 @@ def Doorlock():
     
     time.sleep(2)
     
-=======
-    
-    time.sleep(1)
-    
-    GPIO.output(18,False)
-    
-    print('open')
-    
-    time.sleep(3)
-    
->>>>>>> 1bda1f936267f4a39530351f107806e16359a0c8
     GPIO.cleanup()
     
-    print('cleanup')
+    print('close')
     
     time.sleep(0.5)
-Doorlock()
