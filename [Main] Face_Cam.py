@@ -14,7 +14,7 @@ import os
 
 from math import hypot
 
-# 눈 중앙지점
+# 눈 중앙지점 감지
 def midpoint(p1, p2):
     
     return int((p1.x + p2.x)/2), int((p1.y + p2.y)/2)
@@ -82,7 +82,7 @@ noface=0
 db=Firebase_Main.Token.db
 
 while(cap.isOpened()):
-    #카메라 영상 지정
+    #카메라 영상 frame으로 지정
     ret, frame = cap.read()
     
     #해상도 지정
